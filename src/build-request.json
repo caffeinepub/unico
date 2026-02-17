@@ -1,0 +1,52 @@
+{
+  "kind": "build_request",
+  "title": "Replace UNICO site logo with uploaded image",
+  "projectName": "UNICO",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-7",
+      "text": "Add the user-provided new logo (from the uploaded WhatsApp images) as a static asset under frontend/public/assets/generated, and update the header logo in frontend/src/App.tsx to use this new logo file instead of the current /assets/generated/1000035744.jpeg.dim_512x512.png.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "i wont to change the logo in to this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header logo image in the top bar renders the new uploaded logo and no longer references /assets/generated/1000035744.jpeg.dim_512x512.png.",
+        "The new logo file exists in frontend/public/assets/generated with the exact filename specified in the image requirements.",
+        "The logo remains visually crisp and properly contained (no stretching) at the existing displayed size (h-16 w-16)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui or any other frontend immutable paths listed in SYSTEM_CONTEXT.",
+    "Do not route static images through the backend; serve them from frontend/public/assets/generated and reference them directly from the frontend."
+  ],
+  "nonGoals": [
+    "Do not change any page copy, layout, or colors beyond what is required to swap the logo image.",
+    "No backend changes."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Circular globe logo with gold ring and navy line art, with the wordmark 'UNICO' and subtitle 'GLOBAL TRADE & EXCELLENCE' centered below on a clean white background (unico-logo-new.dim_512x512.png)"
+    ],
+    "edits": [
+      "Replace the existing header logo asset with the new provided logo (1000035744.jpeg.dim_512x512.png > unico-logo-new.dim_512x512.png)"
+    ]
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

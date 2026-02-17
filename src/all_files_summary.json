@@ -1,0 +1,14 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no implemented logic.",
+  "feature_evidence.json": "Feature evidence report describing a logo replacement feature affecting frontend/src/App.tsx.",
+  "frontend-file-summaries.txt": "Pre-written summaries describing the main frontend files, branding styles, Tailwind config, and HTML metadata.",
+  "frontend/index.css": "Defines extensive CSS variables for theme colors and component styling using OKLCH, plus base Tailwind layers.",
+  "frontend/index.html": "HTML entry point with SEO metadata and root div for mounting the React app.",
+  "frontend/src/App.tsx": "React landing page UI with header, hero, navigation, sections, and smooth-scrolling logic using the new logo asset.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages a backend actor instance based on the user's Internet Identity.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context and provider for Internet Identity handling login, logout, and identity restoration via Dfinity AuthClient.",
+  "frontend/src/index.css": "UNICO‑themed Tailwind CSS variables and utility classes including navy and gold brand colors and typography.",
+  "frontend/src/main.tsx": "App bootstrap that sets up React Query, Internet Identity provider, global styles, and renders the App component.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors from CSS variables, custom radii, animations, and plugin integrations.",
+  "project_state.json": "Project state metadata tracking features, assets, logo‑replacement requirements, and project configuration."
+}

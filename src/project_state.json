@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Circular globe logo with gold ring and navy line art, with the wordmark 'UNICO' and subtitle 'GLOBAL TRADE & EXCELLENCE' centered below on a clean white background (unico-logo-new.dim_512x512.png)\n\n## Edit Images\n- Replace the existing header logo asset with the new provided logo (1000035744.jpeg.dim_512x512.png > unico-logo-new.dim_512x512.png)",
+  "existing_features": [
+    {
+      "id": "feature-add-the-user-provided-new-logo-from-the-uploaded-whatsapp-images-as-a-static-asset-under-frontend-public-assets-generated-and-update-the-header-logo-in-frontend-src-app-tsx-to-use-this-new-logo-file-instead-of-the-current-assets-generated-1000035744-jpeg-dim-512x512-png",
+      "title": "Add the user-provided new logo (from the uploaded WhatsApp images) as a static asset under frontend/public/assets/generated, and update the header logo in frontend/src/App.tsx to use this new logo file instead of the current /assets/generated/1000035744.jpeg.dim_512x512.png.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Replace the site/app logo with the user-provided new logo image",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "UNICO",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

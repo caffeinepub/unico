@@ -1,0 +1,38 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T04:57:36.276Z",
+  "summary": "REQ-7 is partially implemented: the header logo in frontend/src/App.tsx now references /assets/generated/unico-logo-new.dim_512x512.png and uses object-contain at h-16 w-16. However, the diff does not show the new logo file being added under frontend/public/assets/generated (no added files), and there are unrelated changes/descriptions suggesting broader site/styling/SEO work beyond the requested logo swap.",
+  "missing_requirements": [
+    {
+      "id": "REQ-7",
+      "requirement": "Add the user-provided new logo as a static asset under frontend/public/assets/generated with the exact filename unico-logo-new.dim_512x512.png.",
+      "reason": "The diff shows no added files (ADDED FILES: none), so there is no evidence the new image file was actually placed in frontend/public/assets/generated as required.",
+      "evidence": [
+        "File diff summary: ADDED FILES: none"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Implemented/changed smooth-scroll anchor click handling behavior in App.tsx.",
+      "reason": "BuildRequest only asks to swap the logo asset/reference; it explicitly states non-goals include no layout/copy changes beyond what is required to swap the logo image.",
+      "evidence": [
+        "frontend/src/App.tsx (added useEffect with handleAnchorClick and add/removeEventListener for anchor links; scrollToContact handler)"
+      ]
+    },
+    {
+      "description": "Claims of additional unrelated frontend work (brand color system in CSS, Tailwind token extensions, SEO metadata changes, and a 'complete single-page landing page').",
+      "reason": "These are not requested in REQ-7 and conflict with the non-goals (no page copy/layout/colors beyond what is required to swap the logo). Even if the underlying files are not shown as modified here, the change is present as newly written content in the modified summary file.",
+      "evidence": [
+        "frontend-file-summaries.txt (describes changes to frontend/src/index.css, frontend/tailwind.config.js, frontend/index.html, and a complete landing page)"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/App.tsx",
+    "project_state.json"
+  ]
+}
