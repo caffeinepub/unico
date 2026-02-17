@@ -1,11 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the UNICO header logo with the newly uploaded UNICO logo image.
+**Goal:** Replace the site’s header/primary logo with the provided new UNICO logo asset.
 
 **Planned changes:**
-- Add the user-provided logo image as a static asset under `frontend/public/assets/generated` (using the specified filename).
-- Update the header logo reference in `frontend/src/App.tsx` to use the new logo file instead of `/assets/generated/1000035744.jpeg.dim_512x512.png`.
-- Ensure the logo displays crisply and contained (no stretching) at the existing `h-16 w-16` size.
+- Update the header (and any shared logo component/markup) to use `/assets/generated/unico-logo-new.dim_512x512.png` as the logo source.
+- Remove/replace any remaining references to the old logo file (`WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg`) so the new logo is used consistently across the site.
+- Ensure the logo displays correctly on mobile and desktop (appropriate sizing and contain behavior without layout breakage).
 
-**User-visible outcome:** The top bar/header shows the new UNICO logo image instead of the old one, with the same sizing and layout.
+**User-visible outcome:** The site header shows the new UNICO logo everywhere it appears, with consistent rendering across screen sizes.

@@ -1,42 +1,40 @@
 {
   "kind": "build_request",
-  "title": "Replace UNICO site logo with uploaded image",
+  "title": "Replace header logo with provided new logo",
   "projectName": "UNICO",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-7",
-      "text": "Add the user-provided new logo (from the uploaded WhatsApp images) as a static asset under frontend/public/assets/generated, and update the header logo in frontend/src/App.tsx to use this new logo file instead of the current /assets/generated/1000035744.jpeg.dim_512x512.png.",
+      "id": "REQ-1",
+      "text": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-1"
+          "msg-6"
         ],
         "quotes": [
-          "i wont to change the logo in to this"
+          "change 1st logo into 2nd logo"
         ]
       },
       "acceptanceCriteria": [
-        "The header logo image in the top bar renders the new uploaded logo and no longer references /assets/generated/1000035744.jpeg.dim_512x512.png.",
-        "The new logo file exists in frontend/public/assets/generated with the exact filename specified in the image requirements.",
-        "The logo remains visually crisp and properly contained (no stretching) at the existing displayed size (h-16 w-16)."
+        "The header logo image source points to /assets/generated/unico-logo-new.dim_512x512.png (or the equivalent static asset path used by the project).",
+        "No UI location continues to reference or render the first uploaded logo file (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg).",
+        "The logo renders correctly on both mobile and desktop without layout breakage (maintains appropriate sizing/contain behavior)."
       ]
     }
   ],
   "constraints": [
-    "Do not modify any files under frontend/src/components/ui or any other frontend immutable paths listed in SYSTEM_CONTEXT.",
-    "Do not route static images through the backend; serve them from frontend/public/assets/generated and reference them directly from the frontend."
+    "Do not edit files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
+    "Do not introduce new backend services or external integrations; this change is frontend-only static-asset/markup update."
   ],
   "nonGoals": [
-    "Do not change any page copy, layout, or colors beyond what is required to swap the logo image.",
-    "No backend changes."
+    "Redesigning the overall site layout or theme.",
+    "Changing SEO metadata, copy, or any other branding elements beyond the logo swap."
   ],
   "imageRequirements": {
-    "required": [
-      "Circular globe logo with gold ring and navy line art, with the wordmark 'UNICO' and subtitle 'GLOBAL TRADE & EXCELLENCE' centered below on a clean white background (unico-logo-new.dim_512x512.png)"
-    ],
+    "required": [],
     "edits": [
-      "Replace the existing header logo asset with the new provided logo (1000035744.jpeg.dim_512x512.png > unico-logo-new.dim_512x512.png)"
+      "Replace the first uploaded logo with the second uploaded logo (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg > unico-logo-new.dim_512x512.png)"
     ]
   },
   "userProfileUpdate": {

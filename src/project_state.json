@@ -5,13 +5,13 @@
   "architectural_notes": [],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Circular globe logo with gold ring and navy line art, with the wordmark 'UNICO' and subtitle 'GLOBAL TRADE & EXCELLENCE' centered below on a clean white background (unico-logo-new.dim_512x512.png)\n\n## Edit Images\n- Replace the existing header logo asset with the new provided logo (1000035744.jpeg.dim_512x512.png > unico-logo-new.dim_512x512.png)",
+  "imageRequirements": "## Edit Images\n- Replace the first uploaded logo with the second uploaded logo (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg > unico-logo-new.dim_512x512.png)",
   "existing_features": [
     {
-      "id": "feature-add-the-user-provided-new-logo-from-the-uploaded-whatsapp-images-as-a-static-asset-under-frontend-public-assets-generated-and-update-the-header-logo-in-frontend-src-app-tsx-to-use-this-new-logo-file-instead-of-the-current-assets-generated-1000035744-jpeg-dim-512x512-png",
-      "title": "Add the user-provided new logo (from the uploaded WhatsApp images) as a static asset under frontend/public/assets/generated, and update the header logo in frontend/src/App.tsx to use this new logo file instead of the current /assets/generated/1000035744.jpeg.dim_512x512.png.",
+      "id": "feature-update-the-app-s-primary-header-logo-to-use-the-second-uploaded-logo-image-file-unico-logo-new-dim-512x512-png-instead-of-the-first-uploaded-logo-image-whatsapp-image-2026-02-17-at-10-19-06-am-2-jpeg-ensuring-the-logo-displayed-in-the-header-matches-the-second-logo-across-the-site",
+      "title": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
       "reqIds": [
-        "REQ-7"
+        "REQ-1"
       ],
       "version": 1
     }
@@ -19,7 +19,7 @@
   "new_feature_requests": [
     {
       "id": "AR-1",
-      "summary": "Replace the site/app logo with the user-provided new logo image",
+      "summary": "Replace the first logo with the second logo in the app",
       "reqIds": [],
       "status": "pending"
     }

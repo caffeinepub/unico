@@ -2,11 +2,9 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-user-provided-new-logo-from-the-uploaded-whatsapp-images-as-a-static-asset-under-frontend-public-assets-generated-and-update-the-header-logo-in-frontend-src-app-tsx-to-use-this-new-logo-file-instead-of-the-current-assets-generated-1000035744-jpeg-dim-512x512-png",
-      "featureTitle": "Add the user-provided new logo (from the uploaded WhatsApp images) as a static asset under frontend/public/assets/generated, and update the header logo in frontend/src/App.tsx to use this new logo file instead of the current /assets/generated/1000035744.jpeg.dim_512x512.png.",
-      "files": [
-        "frontend/src/App.tsx"
-      ],
+      "featureId": "feature-update-the-app-s-primary-header-logo-to-use-the-second-uploaded-logo-image-file-unico-logo-new-dim-512x512-png-instead-of-the-first-uploaded-logo-image-whatsapp-image-2026-02-17-at-10-19-06-am-2-jpeg-ensuring-the-logo-displayed-in-the-header-matches-the-second-logo-across-the-site",
+      "featureTitle": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
+      "files": [],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",
@@ -15,7 +13,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-7"
+        "REQ-1"
       ],
       "confidence": "high"
     }
