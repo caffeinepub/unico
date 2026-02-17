@@ -1,29 +1,53 @@
 {
   "kind": "spec_vs_diff_report",
   "version": "1.0",
-  "generatedAt": "2026-02-17T05:03:03.131Z",
-  "summary": "The diff only updates project_state.json to record the request as pending; it does not implement any frontend asset or markup changes to swap the header logo.",
-  "missing_requirements": [
-    {
-      "id": "REQ-1",
-      "requirement": "Update the app’s primary/header logo to use unico-logo-new.dim_512x512.png instead of WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg, ensuring the header logo matches the new logo across the site.",
-      "reason": "No frontend components, assets, or markup were changed—only a project tracking file was modified. There is no evidence the header logo src/path was updated, old logo references removed, or sizing/contain behavior verified.",
-      "evidence": [
-        "project_state.json"
-      ]
-    }
-  ],
+  "generatedAt": "2026-02-17T05:20:30.587Z",
+  "summary": "REQ-1 appears implemented via a footer technology-stack notice in the React App. However, several additional, unrequested changes were made (branding/landing page overhaul, Tailwind/theme changes, SEO/title change, and project metadata claiming an HTML/JS + Django stack), which were not part of the BuildRequest and in one case contradict the stated constraints.",
+  "missing_requirements": [],
   "hallucinated_features": [
     {
-      "description": "Added/updated internal tracking entries (AR-1, AR-2) marking the logo replacement request as a new_feature_request with status pending.",
-      "reason": "The BuildRequest asks for a frontend-only static asset/markup update; it does not request changes to project tracking/state files.",
+      "description": "Reworked the app into a full UNICO single-page landing page (header/about/services/products/banner/contact sections), beyond adding the requested footer notice.",
+      "reason": "BuildRequest only asked for a clear, user-facing notice in the UI footer; it did not request a full landing-page redesign or additional sections/behaviors.",
+      "evidence": [
+        "frontend/src/App.tsx",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Added smooth-scroll behavior by attaching click handlers to all anchor links.",
+      "reason": "Not requested in REQ-1; unrelated to adding a footer notice about the stack.",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "Introduced/modified global brand styling and Tailwind design tokens (navy/gold, OKLCH tokens, custom utilities).",
+      "reason": "Not requested in REQ-1; BuildRequest only required a footer notice and avoiding Python/Django references in the UI.",
+      "evidence": [
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js",
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Changed HTML entry point metadata/title (document title set to \"I\" and SEO metadata described as \"complete\").",
+      "reason": "Not requested in REQ-1; BuildRequest did not ask for SEO or title changes.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Updated project metadata to state the project uses an HTML/CSS/JavaScript frontend and a Python/Django backend.",
+      "reason": "Contradicts the BuildRequest constraints (stack is fixed to React+TypeScript frontend and Motoko backend) and was not requested as part of REQ-1 (which explicitly treats such a migration as non-actionable).",
       "evidence": [
         "project_state.json"
       ]
     }
   ],
-  "confidence": 0.88,
+  "confidence": 0.66,
   "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/App.tsx",
     "project_state.json"
   ]
 }

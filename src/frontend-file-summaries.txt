@@ -1,6 +1,6 @@
 {
-  "frontend/src/App.tsx": "Complete single-page UNICO landing page with hero header featuring the new logo, navigation, about/services/products/contact sections, banner with background overlay, and footer with proper TypeScript-typed anchor scrolling and responsive layout.",
+  "frontend/src/App.tsx": "Complete single-page UNICO landing page with simplified header showing only the centered head-only logo, followed by about/services/products/banner/contact sections and footer with attribution and technology stack notice (Motoko backend on Internet Computer + React frontend).",
   "frontend/src/index.css": "Global styles with UNICO brand color system (navy #0b2847 and gold #f5c256) defined in OKLCH format, including custom utility classes for brand colors and smooth scroll behavior.",
   "frontend/tailwind.config.js": "Extended Tailwind configuration with UNICO brand tokens (navy, gold colors) and custom design system settings for consistent styling across the landing page.",
-  "frontend/index.html": "HTML entry point with complete SEO metadata including title, description, and keywords exactly as specified for UNICO import-export company."
+  "frontend/index.html": "HTML entry point with complete SEO metadata; document title now set to \"I\" while preserving existing meta description and keywords."
 }

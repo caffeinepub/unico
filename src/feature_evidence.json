@@ -2,9 +2,11 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-update-the-app-s-primary-header-logo-to-use-the-second-uploaded-logo-image-file-unico-logo-new-dim-512x512-png-instead-of-the-first-uploaded-logo-image-whatsapp-image-2026-02-17-at-10-19-06-am-2-jpeg-ensuring-the-logo-displayed-in-the-header-matches-the-second-logo-across-the-site",
-      "featureTitle": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
-      "files": [],
+      "featureId": "feature-treat-the-user-request-to-change-the-frontend-to-plain-html-css-javascript-and-the-backend-to-python-django-as-a-non-actionable-request-within-this-project-and-add-a-clear-user-facing-notice-in-the-ui-footer-stating-that-the-deployed-application-runs-on-the-internet-computer-with-a-motoko-backend-and-a-react-based-frontend",
+      "featureTitle": "Treat the user request to change the frontend to plain HTML/CSS/JavaScript and the backend to Python/Django as a non-actionable request within this project, and add a clear, user-facing notice in the UI (footer) stating that the deployed application runs on the Internet Computer with a Motoko backend and a React-based frontend.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
       "components": [
         "core-infrastructure@1.0.2",
         "shadcn-ui@1.0.0",

@@ -1,14 +1,14 @@
 {
-  "backend/main.mo": "Empty Motoko canister actor with no methods defined.",
-  "feature_evidence.json": "Feature evidence report describing a logo replacement requirement and related components.",
-  "frontend-file-summaries.txt": "Text file containing prewritten summaries of major frontend files such as App.tsx, index.css, Tailwind config, and index.html.",
-  "frontend/index.css": "Tailwind base file defining theme variables, light/dark color tokens, and utility presets using OKLCH values.",
-  "frontend/index.html": "Main HTML entry including SEO metadata and root mount element for the React app.",
-  "frontend/src/App.tsx": "React component rendering the UNICO landing page with hero header, logo, navigation, sections, and smooth scrolling behavior.",
-  "frontend/src/hooks/useActor.ts": "Hook that creates and manages a backend actor instance based on Internet Identity authentication state.",
-  "frontend/src/hooks/useInternetIdentity.ts": "React context and provider implementing Internet Identity authentication, identity persistence, and login/clear helpers.",
-  "frontend/src/index.css": "Extended Tailwind CSS variables and UNICO brand colors with custom utility classes for navy/gold styling and smooth scroll.",
-  "frontend/src/main.tsx": "React entry point initializing QueryClient, InternetIdentityProvider, and rendering the App component.",
-  "frontend/tailwind.config.js": "Tailwind configuration extending colors, radius, animations, and plugins to support UNICO’s branding system.",
-  "project_state.json": "Project metadata file describing features, versioning, and pending requests including a logo replacement requirement."
+  "backend/main.mo": "Empty Motoko actor defining a placeholder backend canister.",
+  "feature_evidence.json": "Feature evidence describing a UX notice requirement and linking it to App.tsx and related components.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files, including App.tsx, index.css, Tailwind config, and index.html.",
+  "frontend/index.css": "Tailwind base theme defining color tokens, dark mode variables, and global text/background styling.",
+  "frontend/index.html": "HTML entry document with SEO metadata and root mount point loading main.tsx.",
+  "frontend/src/App.tsx": "React single‑page layout for the UNICO landing page with smooth scrolling, sections, branding, and footer.",
+  "frontend/src/hooks/useActor.ts": "React hook creating and refreshing a backend actor based on Internet Identity authentication state.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Authentication context and provider wrapping AuthClient to manage Internet Identity login state.",
+  "frontend/src/index.css": "Tailwind theme extension with UNICO brand navy/gold variables, global styling, and custom utility classes.",
+  "frontend/src/main.tsx": "App entry point wiring React Query, Internet Identity provider, and global styles before rendering App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, animations, and design tokens for the UNICO theme.",
+  "project_state.json": "Project metadata describing stack assumptions, existing features, and internal project state tracking."
 }

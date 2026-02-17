@@ -1,26 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "UNICO - Swap header logo to new generated asset",
+  "title": "UNICO — Add footer notice clarifying ICP Motoko + React stack",
   "requirements": [
     {
       "id": "REQ-1",
-      "summary": "Replace the header logo to consistently use the new UNICO logo asset site-wide and remove any remaining references to the old uploaded logo.",
+      "summary": "Add a clear footer notice stating the deployed app runs on the Internet Computer with a Motoko backend and a React-based frontend, and do not reference Python/Django.",
       "acceptanceCriteria": [
-        "The header logo image source points to /assets/generated/unico-logo-new.dim_512x512.png (or the equivalent static asset path used by the project).",
-        "No UI location continues to reference or render the first uploaded logo file (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg).",
-        "The logo renders correctly on both mobile and desktop without layout breakage (maintains appropriate sizing/contain behavior)."
+        "The footer displays an English sentence indicating the app uses a Motoko backend on the Internet Computer and a React frontend.",
+        "No references to Python or Django are added anywhere in the UI.",
+        "The app builds and renders without runtime errors."
       ],
       "file_operations": [
         {
-          "path": "frontend/public/assets/generated/unico-logo-new.dim_512x512.png",
-          "operation": "create",
-          "description": "Add the new logo static asset at the canonical generated-assets path so that /assets/generated/unico-logo-new.dim_512x512.png resolves correctly in all environments."
-        },
-        {
           "path": "frontend/src/App.tsx",
           "operation": "modify",
-          "description": "Update the header/primary logo <img> to reference /assets/generated/unico-logo-new.dim_512x512.png and ensure no remaining references to the old file (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg) remain anywhere in this header markup; keep responsive sizing behavior (object-contain, stable width/height) to avoid layout breakage on mobile and desktop."
+          "description": "Update the existing footer content to include a user-facing notice sentence such as: \"This application runs on the Internet Computer with a Motoko backend and a React-based frontend.\" Ensure the sentence is visible in the footer on all renders, and avoid adding any Python/Django mentions. Keep existing footer links and styling consistent with the current Tailwind-based layout."
         }
       ]
     }

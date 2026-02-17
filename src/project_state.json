@@ -1,29 +1,23 @@
 {
   "schemaVersion": "1.0.0",
   "projectStateVersion": 3,
-  "summary": "New project",
-  "architectural_notes": [],
+  "summary": "Web application project using an HTML/CSS/JavaScript frontend and a Python/Django backend.",
+  "architectural_notes": [
+    "Tech stack defined: frontend uses HTML/CSS/JavaScript; backend uses Python with Django."
+  ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Replace the first uploaded logo with the second uploaded logo (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg > unico-logo-new.dim_512x512.png)",
   "existing_features": [
     {
-      "id": "feature-update-the-app-s-primary-header-logo-to-use-the-second-uploaded-logo-image-file-unico-logo-new-dim-512x512-png-instead-of-the-first-uploaded-logo-image-whatsapp-image-2026-02-17-at-10-19-06-am-2-jpeg-ensuring-the-logo-displayed-in-the-header-matches-the-second-logo-across-the-site",
-      "title": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
+      "id": "feature-treat-the-user-request-to-change-the-frontend-to-plain-html-css-javascript-and-the-backend-to-python-django-as-a-non-actionable-request-within-this-project-and-add-a-clear-user-facing-notice-in-the-ui-footer-stating-that-the-deployed-application-runs-on-the-internet-computer-with-a-motoko-backend-and-a-react-based-frontend",
+      "title": "Treat the user request to change the frontend to plain HTML/CSS/JavaScript and the backend to Python/Django as a non-actionable request within this project, and add a clear, user-facing notice in the UI (footer) stating that the deployed application runs on the Internet Computer with a Motoko backend and a React-based frontend.",
       "reqIds": [
         "REQ-1"
       ],
       "version": 1
     }
   ],
-  "new_feature_requests": [
-    {
-      "id": "AR-1",
-      "summary": "Replace the first logo with the second logo in the app",
-      "reqIds": [],
-      "status": "pending"
-    }
-  ],
+  "new_feature_requests": [],
   "gameProjectType": "none",
   "projectName": "UNICO",
   "clarification_mode": "instant",

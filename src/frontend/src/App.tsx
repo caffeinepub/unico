@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      {/* Header / Hero Section */}
+      {/* Header - Logo Only */}
       <header id="hero" className="relative bg-navy text-white overflow-hidden">
         {/* World overlay background */}
         <div 
@@ -52,57 +52,13 @@ function App() {
           }}
         />
 
-        {/* Top bar with logo and navigation */}
-        <div className="relative z-10 max-w-[1100px] mx-auto px-5 pt-8 pb-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
-            {/* Logo */}
-            <div className="flex items-center gap-3">
-              <img 
-                src="/assets/generated/unico-logo-new.dim_512x512.png" 
-                alt="UNICO Global Trade & Excellence Logo"
-                className="h-16 w-16 object-contain"
-              />
-              <div className="text-left text-xs tracking-[0.15em] uppercase leading-tight">
-                UNICO<br />GLOBAL TRADE & EXCELLENCE
-              </div>
-            </div>
-
-            {/* Navigation */}
-            <nav className="flex flex-wrap items-center justify-center gap-3 text-sm">
-              <a href="#hero" className="hover:underline px-3 py-1">Home</a>
-              <a href="#about" className="hover:underline px-3 py-1">About Us</a>
-              <a href="#services" className="hover:underline px-3 py-1">Services</a>
-              <a href="#products" className="hover:underline px-3 py-1">Products</a>
-              <a href="#contact" className="hover:underline px-3 py-1">Contact</a>
-              <a 
-                href="#contact" 
-                className="border border-gold px-4 py-2 rounded hover:bg-gold hover:text-navy transition-colors text-xs font-medium"
-              >
-                Login / Sign Up
-              </a>
-            </nav>
-          </div>
-
-          {/* Hero content */}
-          <div className="max-w-[900px] mx-auto text-center pb-16">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Global Trading Solutions Delivered With Precision & Trust
-            </h1>
-            <h2 className="text-lg md:text-xl font-normal mb-6">
-              Connecting the world with premium handicrafts, garments, furniture, and ready-to-eat food products.
-            </h2>
-            <p className="text-sm md:text-base mb-8 leading-relaxed">
-              UNICO is a globally trusted import–export company offering quality-assured products and seamless logistics across the USA, Europe, Australia, the Middle East, UAE, Canada, Asia, Africa, and beyond. We specialize in reliable sourcing, timely delivery, and compliance-driven international trade.
-            </p>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <Button asChild size="lg" className="bg-gold hover:bg-gold-hover text-navy font-bold">
-                <a href="#contact" onClick={scrollToContact}>Request a Quote</a>
-              </Button>
-              <Button asChild size="lg" className="bg-gold hover:bg-gold-hover text-navy font-bold">
-                <a href="#contact" onClick={scrollToContact}>Start Your Shipment</a>
-              </Button>
-            </div>
-          </div>
+        {/* Logo centered */}
+        <div className="relative z-10 flex items-center justify-center py-12 px-5">
+          <img 
+            src="/assets/generated/unico-head-logo.dim_512x512.png" 
+            alt="UNICO Logo"
+            className="h-32 w-32 md:h-40 md:w-40 object-contain"
+          />
         </div>
       </header>
 
@@ -414,17 +370,20 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-navy text-white py-8 px-5">
-        <div className="max-w-[1100px] mx-auto text-center">
-          <p className="text-sm mb-2">
+        <div className="max-w-[1100px] mx-auto text-center space-y-3">
+          <p className="text-sm">
             © {new Date().getFullYear()} UNICO Global Trade & Excellence. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground">
-            Built with love using{' '}
+          <p className="text-sm text-white/80">
+            This application runs on the Internet Computer with a Motoko backend and a React-based frontend.
+          </p>
+          <p className="text-sm">
+            Built with ❤️ using{' '}
             <a 
               href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-gold transition-colors"
+              className="text-gold hover:underline"
             >
               caffeine.ai
             </a>

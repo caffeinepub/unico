@@ -1,11 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the site’s header/primary logo with the provided new UNICO logo asset.
+**Goal:** Clarify that the requested move to plain HTML/CSS/JS and Python/Django will not be implemented, and transparently communicate the actual deployed stack.
 
 **Planned changes:**
-- Update the header (and any shared logo component/markup) to use `/assets/generated/unico-logo-new.dim_512x512.png` as the logo source.
-- Remove/replace any remaining references to the old logo file (`WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg`) so the new logo is used consistently across the site.
-- Ensure the logo displays correctly on mobile and desktop (appropriate sizing and contain behavior without layout breakage).
+- Add a clear footer notice stating the app runs on the Internet Computer with a Motoko backend and a React-based frontend.
+- Ensure no UI text references Python or Django.
 
-**User-visible outcome:** The site header shows the new UNICO logo everywhere it appears, with consistent rendering across screen sizes.
+**User-visible outcome:** Users see an English footer message explaining the app uses a Motoko backend on the Internet Computer and a React frontend, with no mention of Python/Django, and the app continues to render without errors.

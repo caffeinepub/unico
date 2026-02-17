@@ -1,50 +1,41 @@
 {
   "kind": "build_request",
-  "title": "Replace header logo with provided new logo",
+  "title": "Reconcile requested Python/Django + plain JS stack change with supported ICP stack",
   "projectName": "UNICO",
   "priority": "normal",
   "requirements": [
     {
       "id": "REQ-1",
-      "text": "Update the app’s primary/header logo to use the second uploaded logo image file (unico-logo-new.dim_512x512.png) instead of the first uploaded logo image (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg), ensuring the logo displayed in the header matches the second logo across the site.",
+      "text": "Treat the user request to change the frontend to plain HTML/CSS/JavaScript and the backend to Python/Django as a non-actionable request within this project, and add a clear, user-facing notice in the UI (footer) stating that the deployed application runs on the Internet Computer with a Motoko backend and a React-based frontend.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-6"
         ],
         "quotes": [
-          "change 1st logo into 2nd logo"
+          "their is sum big change  frontand : html,css,java script backend:python,django"
         ]
       },
       "acceptanceCriteria": [
-        "The header logo image source points to /assets/generated/unico-logo-new.dim_512x512.png (or the equivalent static asset path used by the project).",
-        "No UI location continues to reference or render the first uploaded logo file (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg).",
-        "The logo renders correctly on both mobile and desktop without layout breakage (maintains appropriate sizing/contain behavior)."
+        "The footer displays an English sentence indicating the app uses a Motoko backend on the Internet Computer and a React frontend.",
+        "No references to Python or Django are added anywhere in the UI.",
+        "The app builds and renders without runtime errors."
       ]
     }
   ],
   "constraints": [
-    "Do not edit files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT.",
-    "Do not introduce new backend services or external integrations; this change is frontend-only static-asset/markup update."
+    "Do not attempt to migrate the backend to Python/Django; only Motoko is supported for backend code in this project.",
+    "Do not replace the React/TypeScript frontend with a non-React HTML/CSS/JS app; the frontend stack is fixed to React + TypeScript + Tailwind + React Query.",
+    "Keep all backend logic (if any is added later) in the single Motoko actor at backend/main.mo.",
+    "Do not edit files under frontend/src/components/ui or any frontend immutable paths listed in SYSTEM_CONTEXT."
   ],
   "nonGoals": [
-    "Redesigning the overall site layout or theme.",
-    "Changing SEO metadata, copy, or any other branding elements beyond the logo swap."
+    "Implementing or deploying a Django project.",
+    "Adding Python code or Django REST endpoints.",
+    "Rebuilding the frontend as a non-React static site."
   ],
   "imageRequirements": {
     "required": [],
-    "edits": [
-      "Replace the first uploaded logo with the second uploaded logo (WhatsApp Image 2026-02-17 at 10.19.06 AM-2.jpeg > unico-logo-new.dim_512x512.png)"
-    ]
-  },
-  "userProfileUpdate": {
-    "goalsToAdd": [],
-    "goalsToRemove": [],
-    "preferencesToAdd": [],
-    "preferencesToRemove": [],
-    "miscToAdd": [],
-    "miscToRemove": [],
-    "fieldsToSet": {},
-    "fieldsToDelete": []
+    "edits": []
   }
 }
